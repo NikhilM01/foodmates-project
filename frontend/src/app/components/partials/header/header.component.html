@@ -1,8 +1,51 @@
 
 <header>
-  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" routerLink="/">❤️ FOOD MATES!</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-md-auto ">
+          <li class="nav-item rounded">
+            <a class="nav-link active" aria-current="page" routerLink="/"><i class="fa fa-home me-2"></i>Home</a>
+          </li>
+          <li class="nav-item rounded">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
 
-    <a routerLink="/" class="logo">Food Mine!</a>
+          <li class="nav-item dropdown rounded">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">RAM</a>
+            <ul class="dropdown-menu dropdown-menu-end menu">
+              <li><a class="dropdown-item" routerLink="/profile">Profile</a></li>
+              <li><a class="dropdown-item" routerLink="/orders">Orders</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item">Logout</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="cart" routerLink="/cart-page" style="padding: 0.4rem; ">
+              <button class="cartbutton btn"> <i class="	fa fa-shopping-cart me-2"></i><span>5</span></button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="vh-100 d-flex justify-content-center align-items-center">
+    <h2>Main Content</h2>
+  </div>
+</header>
+
+
+
+
+<!-- <div class="container">
+
+    <a routerLink="/" class="logo">Food Mates!</a>
     <nav>
       <ul>
         <li>
@@ -13,15 +56,14 @@
           <div class="menu">
             <a routerLink="/profile">Profile</a>
             <a routerLink="/orders">Orders</a>
-            <a>Logout</a>
+            <a routerLink="">Logout</a>
           </div>
         </li>
-        <li >
-          <a class="cart" routerLink="/cart-page" style="padding: 0.4rem; " >
-           <button class="cartbutton"> Cart <span>5</span></button>
+        <li>
+          <a class="cart" routerLink="/cart-page" style="padding: 0.4rem; ">
+            <button class="cartbutton btn"> <i class="fa-solid fa-cart-shopping"></i>Cart <span>5</span></button>
           </a>
         </li>
       </ul>
     </nav>
-  </div>
-</header>
+  </div> -->

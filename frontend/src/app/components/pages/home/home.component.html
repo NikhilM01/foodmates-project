@@ -1,37 +1,73 @@
-<ul>
+<!-- <ul>
   <li *ngFor="let food of foods">
-    <a routerLink="/food/{{food.id}}">
+    <a routerLink="/food/{{ food.id }}">
       <img [src]="food.imageUrl" [alt]="food.name" />
       <div class="content">
         <div class="name">
-          {{food.name}}
+          {{ food.name }}
         </div>
-        <span class="favorite {{food.favorite?'':'not'}}">
-          ❤
-        </span>
-        <div class="stars">
-
-
-        </div>
+        <span class="favorite {{ food.favorite ? '' : 'not' }}"> ❤ </span>
+        <div class="stars"></div>
         <div class="product-item-footer">
           <div class="origins">
             <span *ngFor="let origin of food.origins">
-              {{origin}}
+              {{ origin }}
             </span>
           </div>
 
           <div class="cook-time">
             <span>🕒</span>
-            {{food.cookTime}}
+            {{ food.cookTime }}
           </div>
         </div>
 
         <div class="price">
           <span>
-            {{food.price | currency}}
+            {{ food.price | currency }}
           </span>
         </div>
       </div>
     </a>
   </li>
-</ul>
+</ul> -->
+
+
+
+<div class="container">
+  <div class="row products">
+
+
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let food of foods" >
+
+        <div class="card " >
+          <a routerLink="/food/{{ food.id }}">
+            <img class="card-img-top rounded" [src]="food.imageUrl" [alt]="food.name"  />
+            <div class="card-body">
+              <h4 class="card-title">{{ food.name }}</h4>
+              <span class="favorite {{ food.favorite ? '' : 'not' }}"> ❤ </span>
+              <div class="stars"></div>
+              <div class="product-item-footer">
+                <div class="origins">
+                  <span *ngFor="let origin of food.origins" class="badge rounded-pill"> {{ origin }}</span>
+                </div>
+
+                <div class="cook-time">
+                  <span>🕒</span>
+                  {{ food.cookTime }}
+                </div>
+              </div>
+
+              <div class="price">
+                <span>
+                  {{ food.price | currency }}
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+

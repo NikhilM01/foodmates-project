@@ -1,8 +1,13 @@
-header{
+
+
+
+
+ header{
   position: relative;
-  background: white;
+  background: none;
   padding: 0;
-  border-bottom: 1px solid #e72929;
+  font-family: 'Poppins', sans-serif;
+ font-weight: 600;
 }
 
 a{
@@ -10,13 +15,77 @@ a{
 }
 
 a:hover{
-  background:#e72929;
-  color: white;
+color: black;
   cursor: pointer;
 }
- .cart:hover{
+
+
+
+
+.logo{
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: 'Silkscreen', cursive;
+}
+
+
+.cartbutton {
+  background: #FEAE62;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+
+
+a span{
+  background: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size:0.9rem;
+  font-weight: 500;
+}
+
+
+.cartbutton:hover {
+  background:#fabe8c;
+  cursor: pointer;
+}
+
+
+.menu{
+  border-radius: 10px;
+  width: 20%;
+  min-width:8rem;
+}
+
+
+
+
+
+
+
+
+
+/* header{
+  position: relative;
   background: none;
- }
+  padding: 0;
+  margin: 1rem 0 ;
+
+
+}
+
+a{
+  color: #af1313;
+}
+
+a:hover{
+color: black;
+  cursor: pointer;
+}
+
 
 .container{
   margin: 0 auto;
@@ -26,7 +95,7 @@ a:hover{
 
 a.logo{
   font-weight: bolder;
-  padding: 0.4rem;
+  padding: 0.9rem;
   font-size: 1.5rem;
   font-family: 'Silkscreen', cursive;
 }
@@ -58,8 +127,7 @@ a span{
 }
 
 .cartbutton:hover {
-  background:#e72929;
-  color: white;
+  background:#fabe8c;
   cursor: pointer;
 }
 
@@ -72,6 +140,7 @@ a span{
   position:absolute;
   z-index:1;
   background:whitesmoke;
+  border-radius: 10px;
   display: none;
 }
 
@@ -82,4 +151,4 @@ a span{
 .menu a{
   width: 100%;
   min-width:8rem;
-}
+} */

@@ -1,4 +1,107 @@
-ul{
+ .products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.card{
+
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+
+.card:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.card img{
+  object-fit: cover;
+  height: 14.5rem;
+}
+
+.card-title, .cook-time {
+  color: #e72929;
+
+}
+
+.card-body{
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  height: 7rem;
+}
+
+
+.favorite{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.favorite.not{
+  color: grey;
+}
+
+.stars{
+  margin-bottom: 0.2rem;
+}
+
+.product-item-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.origins{
+  flex: 9;
+}
+
+.origins span{
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  color: grey;
+
+  font-weight: 400;
+  margin-right: 0.3rem;
+  padding: 0.1 0.5rem;
+
+}
+
+.cook-time{
+  font-size: 0.9rem;
+}
+
+.price{
+  position: absolute;
+  bottom: 0;
+  padding: 0.3rem 100% 0 0;
+  color: #414141;
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .products{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +112,8 @@ ul{
 
 li a{
   height: 22.5rem;
-  width: 20rem;
-  border: 1px solid whitesmoke;
+  width: 19.5rem;
+  border: 2px solid whitesmoke;
   border-radius: 1rem;
   margin: 0.5rem;
   display: flex;
@@ -87,4 +190,4 @@ li a img{
   color: #414141;
   margin-top: 0.7rem;
   font-size: 1.1rem;
-}
+} */
